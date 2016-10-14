@@ -13,9 +13,10 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Teste"
-        android:id="@+id/button"
-        android:onClick="buttonOnClick"
+        android:text="Give Water"
+        android:id="@+id/water"
+        android:onClick="giveWater"
+        android:maxWidth="150dp"
         android:layout_marginBottom="79dp"
         android:layout_alignParentBottom="true"
         android:layout_alignLeft="@+id/imageView"
@@ -25,8 +26,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView"
-        android:src="@drawable/celoba"
-        android:layout_above="@+id/button"
+        android:src="@drawable/normal"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="85dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Give Food"
+        android:id="@+id/food"
+        android:onClick="giveFood"
+        android:maxWidth="150dp"
+        android:layout_alignBaseline="@+id/water"
+        android:layout_alignBottom="@+id/water"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView" />
 </RelativeLayout>
